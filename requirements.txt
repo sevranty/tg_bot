@@ -1,0 +1,5 @@
+python-telegram-bot
+APScheduler
+SQLAlchemy
+mysql-connector-python
+dotenv

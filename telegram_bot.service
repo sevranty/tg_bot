@@ -1,0 +1,13 @@
+[Unit]
+Description=Telegram Assistant Bot
+After=network.target
+
+[Service]
+WorkingDirectory=/home/user/telegram-bot
+ExecStart=/usr/bin/python3 bots/telegram_bot.py
+Restart=always
+RestartSec=5
+EnvironmentFile=/home/user/telegram-bot/secrets/.env.prod
+
+[Install]
+WantedBy=multi-user.target
